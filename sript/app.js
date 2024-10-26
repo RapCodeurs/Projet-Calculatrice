@@ -1,10 +1,12 @@
 // Les variables pour stoquer les éléments 
+
 const touch = [...document.querySelectorAll('.btn')];
 const list = touch.map(e => e.dataset.key);
 const screem = document.querySelector('.screem');
 
 
 // Récupération des valeurs
+
 document.addEventListener('keydown', (e) => {
   const v = e.key;
   calculed(v);
